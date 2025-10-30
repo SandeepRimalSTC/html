@@ -1,0 +1,107 @@
+* {
+    background-image: url(https://wallpapercave.com/wp/wp3276782.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+    background-blend-mode: overlay;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+    border: radius 0px;
+  max-width: fit-content;
+
+}
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.563);
+   border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    mix-blend-mode: screen ;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+nav {
+   display: flex;
+    gap: 20px;
+    color: black;
+   
+}
+.banner {
+    text-align: center;
+    padding:  20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    mix-blend-mode: screen ;
+}
+h1
+{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    border-top: 2px solid white;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 14px;
+    border-bottom: 2px solid white;
+}
+iframe {
+    text-align: center;
+    width: 560px;
+    height: 315px;
+}
+img 
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    
+    
+
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 20px;
+}

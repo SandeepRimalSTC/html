@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: azure;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://wallpaperaccess.com/full/2342629.jpg');
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0px 0px 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+label.navimg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: url('https://cdn.dribbble.com/users/360093/screenshots/4726071/hamburgermenu.gif') no-repeat center/contain;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #000;
+}
+
+#nav-toggle:checked + label.navimg + nav {
+  display: flex;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.banner p {
+  font-size: 1.1em;
+}
+
+main.content section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); 
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+main.content h2 {
+  margin-bottom: 10px;
+  color: #ffd700;
+  font-size: 1.5em;
+}
+
+ul.player-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.player-name {
+  font-weight: bold;
+  color: #f0c040;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  label.navimg {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    width: auto;
+  }
+
+  nav a {
+    padding: 10px 15px;
+  }
+}
