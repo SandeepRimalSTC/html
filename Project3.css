@@ -1,0 +1,87 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #111;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* === Navigation === */
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover and focus states */
+nav a:hover,
+nav a:focus {
+  background-color: #ffd700;
+  color: #000;
+  outline: none;
+}
+
+/* === Toggle Setup === */
+#nav-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+label.navimg {
+  display: none; /* Hidden by default (only shows on mobile) */
+  width: 40px; /* ← previously “5” (missing units!) */
+  height: 40px;
+  cursor: pointer;
+  background: url('https://cdn.dribbble.com/users/360093/screenshots/4726071/hamburgermenu.gif')
+    no-repeat center/contain;
+}
+
+/* === Responsive Design (Mobile) === */
+@media (max-width: 768px) {
+  /* Stack layout */
+  nav {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #222;
+    border-radius: 6px;
+    margin-top: 10px;
+    float: left;
+  }
+
+  nav a {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show the hamburger icon */
+  label.navimg {
+    display: block;
+    margin: 15px 20px;
+  }
+
+  /* When checkbox is checked → show nav */
+  #nav-toggle:checked + label.navimg + nav {
+    display: flex;
+  }
+}
